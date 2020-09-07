@@ -1,0 +1,11 @@
+a {/* element selector */
+  color: red;
+}
+
+#my-link {/* id selector */
+  color: green;
+}
+
+.my-link {/* class selector */
+  color: blue;  
+}
