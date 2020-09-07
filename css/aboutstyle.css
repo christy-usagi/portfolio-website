@@ -34,7 +34,7 @@ a {
   text-decoration: none; /* No underlining */
 }
 a:hover {
-  color: #C7603A;
+  color: red;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 
@@ -47,6 +47,54 @@ a:active { /* selected link */
 
 img {
   width: 100%;
+}
+
+a {/* element selector */
+  color: brown;
+}
+
+#my-blossom {/* id selector */
+  color: #0DA59B;
+}
+
+.blossom {/* class selector */
+  color: #C7603A;
+}
+
+a {/* element selector */
+  color: brown;
+}
+
+#my-note {/* id selector */
+  color: #0DA59B;
+}
+
+.note {/* class selector */
+  color: #C7603A;
+}
+
+a {/* element selector */
+  color: brown;
+}
+
+#my-study {/* id selector */
+  color: #0DA59B;
+}
+
+.study {/* class selector */
+  color: #C7603A;
+}
+
+a {/* element selector */
+  color: brown;
+}
+
+#my-recipe {/* id selector */
+  color: #0DA59B;
+}
+
+.recipe {/* class selector */
+  color: #C7603A;
 }
 
 .button {
