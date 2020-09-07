@@ -1,10 +1,10 @@
 body {
-  background-color: #fffff0;
-  font-family: 'Raleway', sans-serif;
+  background-color: #F5D9B0;
+  font-family: 'Merriweather', serif;
   font-size: 16px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: #1C8F88;
+  color: #000000;
 }
 
 h1, h2, h3, h4 {
@@ -30,7 +30,7 @@ h4 {
 }
 
 a {
-  color: #26C8B1;
+  color: #0DA59B;
   text-decoration: none; /* No underlining */
 }
 a:hover {
@@ -39,7 +39,7 @@ a:hover {
 }
 
 a:visited { /* visited link */
-  color: #0DA59B;
+  color: #C7603A;
 }
 a:active { /* selected link */
   color: #3F13AB;
@@ -66,20 +66,20 @@ img {
 }
 
 .button.contact {
-  background-color: transparent;
-  color: #0FCBBF;
+  background-color: #0FCBBF;
+  color: #ffffff;
   text-transform: uppercase;
   border: 2px solid #0DA59B;
 }
 
 .button.contact:hover {
-  background-color: #0FCBBF;
-  color: #ffffff;
+  background-color: transparent;
+  color: #0DA59B;
 }
 
 .button.readmore {
   background-color: transparent;
-  color: #0FCBBF;
+  color: #0DA59B;
   text-transform: lowercase;
   border: 2px solid #0DA59B;
 }
