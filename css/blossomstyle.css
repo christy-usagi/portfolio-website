@@ -49,6 +49,54 @@ img {
   width: 100%;
 }
 
+a {/* element selector */
+  color: brown;
+}
+
+#my-blossom {/* id selector */
+  color: #C9078E;
+}
+
+.blossom {/* class selector */
+  color: #C7603A;
+}
+
+a {/* element selector */
+  color: brown;
+}
+
+#my-note {/* id selector */
+  color: #C9078E;
+}
+
+.note {/* class selector */
+  color: #C7603A;
+}
+
+a {/* element selector */
+  color: brown;
+}
+
+#my-study {/* id selector */
+  color: #C9078E;
+}
+
+.study {/* class selector */
+  color: #C7603A;
+}
+
+a {/* element selector */
+  color: brown;
+}
+
+#my-recipe {/* id selector */
+  color: #C9078E;
+}
+
+.recipe {/* class selector */
+  color: #C7603A;
+}
+
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #AB448C;
