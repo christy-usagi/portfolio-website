@@ -3,8 +3,8 @@
 }
 
 header {
+  text-align: unset;
   background-color: #0FCBBF;
-	text-align: unset;
 padding: 20px 0 13px;
  margin: 10px;
  padding-top: 10px;
@@ -101,8 +101,8 @@ img {
 }
 
 #hero {
-  background-color: #ffe4c4;
   text-align: center;
+  background-color: #ffe4c4;
   padding: 10px 0;
   display: inline-block;
   width: 100%;
@@ -132,6 +132,48 @@ main {
     padding: 10px 0;
 }
 
+
+
+
+@keyframes color-change {
+  0% {fill: #0FCBBF;}
+  50% {fill: #fcffad;}
+  75% {fill: #2db625;}
+  100% {fill: ##b66425;}
+}
+
+.sun {
+  animation-duration: 8s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: infinite;
+  animation-timing-function: ease-in;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(10px,50px);}
+  to {transform: translate(100px,50px);}
+}
+
+.cloud-front {
+  animation-name: color-change;
+animation-duration: 20s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,38px);}
+  to {transform: translate(100px, 38px);}
+}
+
+.cloud-back {
+  animation: 20s cloud-move-reverse infinite alternate ease-in;
+}
+
+
 .row::after {
   content: "";
   clear: both;
@@ -147,6 +189,7 @@ selector {
 /* Layout styling */
 
 .container {
+  border-radius: 10px;
   padding: 0 15px;
 }
 
@@ -353,6 +396,7 @@ nav > ul > li > a:hover {
 	color: #ffffff;
 	/* needed to override the default link color */
 	font-weight: 400;
+  text-decoration: none;
 	padding: 10px;
 	border-radius: 10px;
 	border-bottom: 3px solid #0DA59B;
@@ -397,6 +441,16 @@ nav > ul > li > a:hover {
 	border: 2px solid #0DA59B;
 }
 
+
+
+
+  nav {
+    width: auto;
+    float: right
+    margin-top: 4px;
+  }
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -406,9 +460,16 @@ Medium devices (640px and larger)
     padding: 20px 0 13px;
   }
 
-  nav {
-    width: auto;
-    float: right
-    margin-top: 4px;
+
+  /* ==============================
+  Large devices (1024px or larger)
+  ================================= */
+  @media only screen and (min-width: 1024px) {
   }
-}
+
+
+  /* ==============================
+  X-large devices (1440px or larger)
+  ================================= */
+  @media only screen and (min-width: 1440px) {
+  }
