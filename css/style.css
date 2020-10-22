@@ -173,8 +173,10 @@
 	border-radius: 10px;
 	border-bottom: 3px solid #0DA59B;
 	/* width of the border, type, color */
-	transition: 0.5s opacity;
+  transition-duration: 0.2s;
+ transition-property: opacity;
 }
+
 
 .button:hover {
 	opacity: 0.8;
@@ -634,8 +636,9 @@ Medium devices (640px and larger)
   	border-radius: 10px;
   	border-bottom: 3px solid #0DA59B;
   	/* width of the border, type, color */
-  	transition: 0.5s opacity;
-  }
+    transition-duration: 0.2s;
+   transition-property: opacity;
+ }
 
   .button:hover {
   	opacity: 0.8;
@@ -1096,8 +1099,9 @@ Medium devices (640px and larger)
     	border-radius: 10px;
     	border-bottom: 3px solid #0DA59B;
     	/* width of the border, type, color */
-    	transition: 0.5s opacity;
-    }
+      transition-duration: 0.2s;
+   transition-property: opacity;
+ }
 
     .button:hover {
     	opacity: 0.8;
@@ -1559,8 +1563,9 @@ Medium devices (640px and larger)
       	border-radius: 10px;
       	border-bottom: 3px solid #0DA59B;
       	/* width of the border, type, color */
-      	transition: 0.5s opacity;
-      }
+        transition-duration: 0.2s;
+   transition-property: opacity;
+ }
 
       .button:hover {
       	opacity: 0.8;
