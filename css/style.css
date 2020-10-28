@@ -173,7 +173,7 @@
 	border-radius: 10px;
 	border-bottom: 3px solid #0DA59B;
 	/* width of the border, type, color */
-  transition-duration: 0.2s;
+  transition-duration: 2s;
  transition-property: opacity;
 }
 
@@ -321,7 +321,7 @@ Medium devices (640px and larger)
   }
 
   .logo {
-    max-width: 250px;
+    max-width: 150px;
     align-items: center;
   }
 
@@ -636,7 +636,7 @@ Medium devices (640px and larger)
   	border-radius: 10px;
   	border-bottom: 3px solid #0DA59B;
   	/* width of the border, type, color */
-    transition-duration: 0.2s;
+    transition-duration: 2s;
    transition-property: opacity;
  }
 
@@ -784,7 +784,7 @@ Medium devices (640px and larger)
     }
 
     .logo {
-      max-width: 250px;
+      max-width: 150px;
       text-align: center;
     }
 
@@ -1099,7 +1099,7 @@ Medium devices (640px and larger)
     	border-radius: 10px;
     	border-bottom: 3px solid #0DA59B;
     	/* width of the border, type, color */
-      transition-duration: 0.2s;
+      transition-duration: 2s;
    transition-property: opacity;
  }
 
@@ -1563,7 +1563,7 @@ Medium devices (640px and larger)
       	border-radius: 10px;
       	border-bottom: 3px solid #0DA59B;
       	/* width of the border, type, color */
-        transition-duration: 0.2s;
+        transition-duration: 2s;
    transition-property: opacity;
  }
 
