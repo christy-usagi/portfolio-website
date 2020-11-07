@@ -173,15 +173,12 @@
 	border-radius: 10px;
 	border-bottom: 3px solid #0DA59B;
 	/* width of the border, type, color */
-  transition-duration: 2s;
- transition-property: opacity;
+  transition: background-color 0.2s ease-out;
 }
 
 
 .button:hover {
-	opacity: 0.8;
-	/* Reduces the opacity of the button to 80% */
-	text-decoration: none;
+	background-color: white;
 }
 
 .button.contact {
@@ -636,14 +633,12 @@ Medium devices (640px and larger)
   	border-radius: 10px;
   	border-bottom: 3px solid #0DA59B;
   	/* width of the border, type, color */
-    transition-duration: 2s;
-   transition-property: opacity;
- }
+    transition: background-color 0.2s ease-out;
+  }
+
 
   .button:hover {
-  	opacity: 0.8;
-  	/* Reduces the opacity of the button to 80% */
-  	text-decoration: none;
+  	background-color: white;
   }
 
   .button.contact {
@@ -1099,14 +1094,12 @@ Medium devices (640px and larger)
     	border-radius: 10px;
     	border-bottom: 3px solid #0DA59B;
     	/* width of the border, type, color */
-      transition-duration: 2s;
-   transition-property: opacity;
- }
+      transition: background-color 0.2s ease-out;
+    }
+
 
     .button:hover {
-    	opacity: 0.8;
-    	/* Reduces the opacity of the button to 80% */
-    	text-decoration: none;
+    	background-color: white;
     }
 
     .button.contact {
@@ -1563,14 +1556,12 @@ Medium devices (640px and larger)
       	border-radius: 10px;
       	border-bottom: 3px solid #0DA59B;
       	/* width of the border, type, color */
-        transition-duration: 2s;
-   transition-property: opacity;
- }
+        transition: background-color 0.2s ease-out;
+      }
+
 
       .button:hover {
-      	opacity: 0.8;
-      	/* Reduces the opacity of the button to 80% */
-      	text-decoration: none;
+      	background-color: white;
       }
 
       .button.contact {
