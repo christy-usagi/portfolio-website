@@ -18,6 +18,21 @@ onclick="myFunction()"
   padding-right: 0;
 }
 
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+
 #work .row { padding-bottom: 20px; border-bottom: 1px solid #4a4a4a; }
 
 /* Flexbox example start */
@@ -260,6 +275,11 @@ Medium devices (640px and larger)
   border-radius: 10px;
   }
 
+  nav > ul {
+    margin: 1em 0;
+  }
+
+
   nav > ul > li {
   display: inline-block;
 }
@@ -380,7 +400,7 @@ Medium devices (640px and larger)
   }
 
   main {
-    padding-top: 133px;
+    padding-top: 56px;
   }
 
   .col-md-6 {
@@ -467,6 +487,7 @@ Medium devices (640px and larger)
   nav > ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
   }
 
 min-width: 641px
