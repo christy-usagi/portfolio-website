@@ -532,7 +532,6 @@ min-width: 641px
   /* Header */
   .flexbox-example .header {
     padding: 50px;
-    text-align: center;
     align-items: center;
     background: #0FCBBF;
     color: white;
