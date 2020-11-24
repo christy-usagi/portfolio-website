@@ -4,14 +4,33 @@
 
 header {
   background-color: #0FCBBF;
+  padding: 10px 0 4px;
 
 }
+
+
+main {
+  padding-top: 56px;
+}
+
 
 .icon {
 onclick="myFunction()"
 }
 
 
+nav {
+  width: auto;
+  float: right
+  margin-top: 4px;
+  text-align: center;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+   margin: 1em 0;
+}
 
 .navtoggle, .navtoggle.responsive {
   position: relative;
@@ -251,19 +270,11 @@ onclick="myFunction()"
 }
 
 
-main {
-  padding-top: 56px;
-}
 
 
 
 
-  nav {
-    width: auto;
-    float: right
-    margin-top: 4px;
-    text-align: center;
-  }
+
 
 
 /* ==============================
@@ -287,6 +298,45 @@ Medium devices (640px and larger)
 
 
 
+    nav > ul > li {
+    display: inline-block;
+  }
+
+
+  nav > ul {
+    margin: 1em 0;
+list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+
+
+  nav > ul > li > a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ffffff;
+  }
+
+  nav > ul > li > a:visited {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000000;
+  }
+
+  nav > ul > li > a:hover {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #095B56;
+  }
+
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
 
   .navtoggle li:not(:last-child) {
     display: none;
@@ -497,42 +547,7 @@ Medium devices (640px and larger)
   }
 
 
-  nav > ul {
-    margin: 1em 0;
-list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
 
-
-
-
-  nav > ul > li {
-  display: inline-block;
-}
-
-
-
-  nav > ul > li > a {
-    padding: 0 15px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #ffffff;
-  }
-
-  nav > ul > li > a:visited {
-    padding: 0 15px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #000000;
-  }
-
-  nav > ul > li > a:hover {
-    padding: 0 15px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #095B56;
-  }
 
 
   #work .row { padding-bottom: 20px; border-bottom: 1px solid #4a4a4a; }
@@ -976,9 +991,7 @@ list-style-type: none;
       padding: 0;
     }
 
-    nav > ul > li {
-      display: inline-block;
-    }
+
 
     nav > ul > li > a {
       padding: 0 15px;
@@ -1253,6 +1266,11 @@ list-style-type: none;
       line-height: 1.7;
       /* Sets the line-height to 1.6 * the font-size */
       color: #000000;
+      }
+
+
+      nav > ul > li {
+      display: inline-block;
       }
 
       h1,
