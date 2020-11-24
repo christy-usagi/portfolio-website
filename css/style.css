@@ -2,6 +2,46 @@
   box-sizing: border-box;
 }
 
+header {
+  background-color: #0FCBBF;
+
+}
+
+.icon {
+onclick="myFunction()"
+}
+
+
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
 
 
 #work .row { padding-bottom: 20px; border-bottom: 1px solid #4a4a4a; }
@@ -18,7 +58,6 @@
 /* Header */
 .flexbox-example .header {
   padding: 50px;
-  text-align: center;
   align-items: center;
   background: #0FCBBF;
   color: white;
@@ -105,7 +144,6 @@
 /* Header */
 .grid-example .header {
   padding: 50px;
-  text-align: center;
   background: #55baf5;
   color: black;
 }
@@ -213,6 +251,11 @@
 }
 
 
+main {
+  padding-top: 56px;
+}
+
+
 
 
   nav {
@@ -226,13 +269,12 @@
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
   * {
     box-sizing: border-box;
   }
 
   header {
-    text-align: center;
     background-color: #0FCBBF;
   padding: 20px 0 13px;
    margin: 10px;
@@ -241,6 +283,26 @@ Medium devices (640px and larger)
   padding-bottom: 15px;
   padding-left: 5px;
   border-radius: 10px;
+  }
+
+
+
+
+  .navtoggle li:not(:last-child) {
+    display: none;
+  }
+
+  .navtoggle.responsive nav {
+    padding: 24px 0 0;
+  }
+  .navtoggle.responsive li  {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid rgba(255,127,80,0.5);
+  }
+
+  .navtoggle.responsive li:last-child  {
+    padding: 0 0 10px;
   }
 
   body {
@@ -319,6 +381,7 @@ Medium devices (640px and larger)
 
   .logo {
     max-width: 150px;
+    min-width: 641px
     align-items: center;
   }
 
@@ -350,7 +413,7 @@ Medium devices (640px and larger)
   }
 
   main {
-    padding-top: 133px;
+    padding-top: 56px;
   }
 
   .col-md-6 {
@@ -435,13 +498,20 @@ Medium devices (640px and larger)
 
 
   nav > ul {
-    list-style-type: none;
+    margin: 1em 0;
+list-style-type: none;
     padding: 0;
+    margin: 0;
   }
 
+
+
+
   nav > ul > li {
-    display: inline-block;
-  }
+  display: inline-block;
+}
+
+
 
   nav > ul > li > a {
     padding: 0 15px;
@@ -479,7 +549,6 @@ Medium devices (640px and larger)
   /* Header */
   .flexbox-example .header {
     padding: 50px;
-    text-align: center;
     align-items: center;
     background: #0FCBBF;
     color: white;
@@ -693,7 +762,6 @@ Medium devices (640px and larger)
     }
 
     header {
-      text-align: center;
       background-color: #0FCBBF;
     padding: 20px 0 13px;
      margin: 10px;
@@ -769,6 +837,14 @@ Medium devices (640px and larger)
     img {
     	width: 100%;
     }
+
+    .navtoggle, .navtoggle.responsive {
+      position: relative;
+    }
+
+    .navtoggle.responsive li  {
+  display: block;
+}
 
     .row {
       margin: 25px 0; /* 25px top and bottom, 0 left and right */
@@ -1213,6 +1289,26 @@ Medium devices (640px and larger)
       	/* No underlining */
       }
 
+
+
+      .navtoggle li:not(:last-child) {
+        display: none;
+      }
+
+
+      .navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
       a:hover {
       	color: #C7603A;
       	text-decoration: underline;
@@ -1246,6 +1342,10 @@ Medium devices (640px and larger)
         text-align: center;
         align-items: center;
       }
+
+
+
+
 
       #hero h1 {
         text-align: center; /* Centers text */
