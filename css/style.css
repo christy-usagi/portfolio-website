@@ -5,40 +5,60 @@
 header {
   background-color: #0FCBBF;
   padding: 10px 0 4px;
-
 }
 
 
 main {
-  padding-top: 56px;
+  padding-top: 60px;
+}
+
+.logo {
+  max-width: 150px;
 }
 
 
-.icon {
-onclick="myFunction()"
-}
 
 
 nav {
+  display: inline-block;
   width: auto;
-  float: right
+  float: right;
   margin-top: 4px;
   text-align: center;
+  position: relative;
 }
 
 nav > ul {
   list-style-type: none;
   padding: 0;
-   margin: 1em 0;
+  margin: 0;
 }
 
-.navtoggle, .navtoggle.responsive {
-  position: relative;
-}
+
+
+
+
 
 .navtoggle li:not(:last-child) {
   display: none;
 }
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+
+.navtoggle,
+.navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
 
 .navtoggle li .icon {
   position: absolute;
@@ -48,22 +68,26 @@ nav > ul {
   padding-right: 0;
 }
 
+
+
+
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
 
-.navtoggle.responsive li  {
+
+
+
+#navbar .container {
   display: block;
-  padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
-}
-
-.navtoggle.responsive li:last-child  {
-  padding: 0 0 10px;
 }
 
 
-#work .row { padding-bottom: 20px; border-bottom: 1px solid #4a4a4a; }
+
+#work .row {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #4a4a4a;
+}
 
 /* Flexbox example start */
 	/* Reference: https://www.w3schools.com/css/css3_flexbox.asp */
@@ -297,17 +321,37 @@ Medium devices (640px and larger)
   }
 
 
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
 
-    nav > ul > li {
-    display: inline-block;
+  nav > ul {
+    margin-top: 1em 0;
+margin: 1em 0;
+    margin-bottom: 1em 0;
+
+}
+
+nav > ul > li {
+  display: none;
+}
+
+
+.navtoggle.responsive nav {
+    padding: 0px;
   }
 
 
-  nav > ul {
-    margin: 1em 0;
-list-style-type: none;
-    padding: 0;
-    margin: 0;
+.navtoggle li:last-child) {
+  display: none;
+}
+
+.navtoggle li:not(:last-child) {
+    display: inline-block;
+    border-top: none;
+    padding: 0px;
   }
 
 
@@ -334,9 +378,7 @@ list-style-type: none;
   }
 
 
-  .navtoggle li:not(:last-child) {
-    display: inline-block;
-  }
+
 
   .navtoggle li:not(:last-child) {
     display: none;
@@ -431,7 +473,7 @@ list-style-type: none;
 
   .logo {
     max-width: 150px;
-    min-width: 641px
+    min-width: 641px;
     align-items: center;
   }
 
@@ -482,7 +524,7 @@ list-style-type: none;
     0% {fill: #0FCBBF;}
     50% {fill: #fcffad;}
     75% {fill: #2db625;}
-    100% {fill: ##b66425;}
+    100% {fill: #b66425;}
   }
 
   .sun {
@@ -759,11 +801,7 @@ list-style-type: none;
 
 
 
-    nav {
-      width: auto;
-      float: right
-      margin-top: 4px;
-    }
+
 
 
 
@@ -921,7 +959,7 @@ list-style-type: none;
       0% {fill: #0FCBBF;}
       50% {fill: #fcffad;}
       75% {fill: #2db625;}
-      100% {fill: ##b66425;}
+      100% {fill: #b66425;}
     }
 
     .sun {
@@ -983,6 +1021,13 @@ list-style-type: none;
 
     .row {
       margin: 25px 0; /* 25px top and bottom, 0 left and right */
+    }
+
+
+    nav {
+      width: auto;
+      float: right;
+      margin-top: 4px;
     }
 
 
@@ -1225,11 +1270,7 @@ list-style-type: none;
 
 
 
-      nav {
-        width: auto;
-        float: right
-        margin-top: 4px;
-      }
+
 
 
 
@@ -1244,7 +1285,6 @@ list-style-type: none;
       }
 
       header {
-        text-align: center;
         align-items: center;
         background-color: #0FCBBF;
       padding: 25px 0 14px;
@@ -1309,23 +1349,49 @@ list-style-type: none;
 
 
 
-      .navtoggle li:not(:last-child) {
-        display: none;
-      }
+            nav {
+              width: auto;
+              float: right;
+              margin-top: 4px;
+            }
+
+            nav > ul {
+              list-style-type: none;
+              padding: 0;
+            }
+
+            nav > ul > li {
+              display: inline-block;
+            }
+
+            nav > ul > li > a {
+              padding: 0 20px;
+              text-transform: uppercase;
+              font-weight: 700;
+              color: #ffffff;
+            }
+
+            nav > ul > li > a:visited {
+              padding: 0 20px;
+              text-transform: uppercase;
+              font-weight: 700;
+              color: #000000;
+            }
+
+            nav > ul > li > a:hover {
+              padding: 0 15px;
+              text-transform: uppercase;
+              font-weight: 700;
+              color: #095B56;
+            }
 
 
-      .navtoggle.responsive nav {
-  padding: 24px 0 0;
-}
-.navtoggle.responsive li  {
-  display: block;
-  padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
-}
+            .navtoggle li:last-child {
+                display: none;
+              }
 
-.navtoggle.responsive li:last-child  {
-  padding: 0 0 10px;
-}
+
+
 
       a:hover {
       	color: #C7603A;
@@ -1412,7 +1478,7 @@ list-style-type: none;
         0% {fill: #0FCBBF;}
         50% {fill: #fcffad;}
         75% {fill: #2db625;}
-        100% {fill: ##b66425;}
+        100% {fill: #b66425;}
       }
 
       .sun {
@@ -1477,38 +1543,13 @@ list-style-type: none;
       }
 
 
-      nav > ul {
-        list-style-type: none;
-        padding: 0;
+
+
+
+      #work .row {
+        padding-bottom: 20px;
+        border-bottom: 1px solid #4a4a4a;
       }
-
-      nav > ul > li {
-        display: inline-block;
-      }
-
-      nav > ul > li > a {
-        padding: 0 20px;
-        text-transform: uppercase;
-        font-weight: 700;
-        color: #ffffff;
-      }
-
-      nav > ul > li > a:visited {
-        padding: 0 20px;
-        text-transform: uppercase;
-        font-weight: 700;
-        color: #000000;
-      }
-
-      nav > ul > li > a:hover {
-        padding: 0 15px;
-        text-transform: uppercase;
-        font-weight: 700;
-        color: #095B56;
-      }
-
-
-      #work .row { padding-bottom: 20px; border-bottom: 1px solid #4a4a4a; }
 
       /* Flexbox example start */
       	/* Reference: https://www.w3schools.com/css/css3_flexbox.asp */
@@ -1712,12 +1753,3 @@ list-style-type: none;
       	text-transform: lowercase;
       	border: 2px solid #0DA59B;
       }
-
-
-
-
-        nav {
-          width: auto;
-          float: right
-          margin-top: 4px;
-        }
