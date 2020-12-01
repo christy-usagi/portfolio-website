@@ -4,7 +4,8 @@
 
 onclick="myFunction()"
 
-onclick="menuToggle()”
+
+
 
 
 
