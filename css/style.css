@@ -1,1381 +1,75 @@
 * {
-box-sizing: border-box;
-}
-
-header {
-background-color: #0FCBBF;
-padding: 10px 0 4px;
-}
-
-main {
-padding-top: 56px;
-}
-
-.logo {
-max-width: 150px;
-}
-
-
-
-nav {
-display: inline-block;
-width: auto;
-float: right;
-margin-top: 4px;
-text-align: center;
-position: relative;
-}
-
-nav>ul {
-list-style-type: none;
-padding: 0;
-margin: 0;
-}
-
-.navtoggle li:not(:last-child) {
-display: none;
-}
-
-.navtoggle.responsive li {
-display: block;
-padding: 10px 0;
-border-top: 1px solid rgba(255, 127, 80, 0.5);
-}
-
-.navtoggle,
-.navtoggle.responsive {
-position: relative;
-}
-
-.navtoggle.responsive li:last-child {
-padding: 0 0 10px;
-}
-
-.navtoggle li .icon {
-position: absolute;
-right: 0;
-top: 2px;
-font-size: 20px;
-padding-right: 0;
-}
-
-.navtoggle.responsive nav {
-padding: 24px 0 0;
-}
-
-#navbar .container {
-display: block;
-}
-
-#work .row {
-padding-bottom: 20px;
-border-bottom: 1px solid #4a4a4a;
-}
-
-
-/* Flexbox example start */
-
-
-/* Reference: https://www.w3schools.com/css/css3_flexbox.asp */
-
-.flexbox-example {
-background-color: transparent;
-border: 1px dotted transparent;
-padding: 0px 20px;
-}
-
-
-/* Header */
-
-.flexbox-example .header {
-padding: 50px;
-align-items: center;
-background: #0FCBBF;
-color: white;
-}
-
-
-/* Style the top navigation bar */
-
-.flexbox-example .navbar {
-display: flex;
-align-items: center;
-justify-content: space-between;
-background-color: #0FCBBF;
-}
-
-.flexbox-example .align-left {
-display: flex;
-justify-content: flex-start;
-}
-
-.flexbox-example .align-right {
-display: flex;
-justify-content: flex-end;
-}
-
-
-/* Style the navigation bar links */
-
-.flexbox-example .navbar a {
-color: black;
-padding: 14px 20px;
-text-decoration: none;
-align-items: center;
-text-align: center;
-}
-
-
-/* Change color on hover */
-
-.flexbox-example .navbar a:hover {
-background-color: #c3ffeb;
-color: #C7603A;
-}
-
-
-/* Column container */
-
-.flexbox-example .row {
-display: flex;
-flex-wrap: wrap;
-justify-content: flex-start;
-margin: 0 auto;
-}
-
-
-/* Main column */
-
-.flexbox-example .project {
-width: 32.33%;
-background-color: #ffe4c4;
-margin: 5px;
-padding: 10px;
-}
-
-
-/* Footer */
-
-.flexbox-example .footer {
-padding: 5px;
-text-align: center;
-background: #ffe4c4;
-color: black;
-margin-top: 10px;
-}
-
-
-/* Grid layout example start */
-
-
-/* Reference: https://www.w3schools.com/css/css_grid.asp */
-
-.grid-example {
-background-color: transparent;
-border: 1px dotted black;
-padding: 0px 20px;
-}
-
-.grid-example .grid-container {
-display: grid;
-grid-template-columns: auto auto auto auto;
-grid-gap: 10px;
-padding: 10px;
-align-content: center;
-}
-
-
-/* Header */
-
-.grid-example .header {
-padding: 50px;
-background: #55baf5;
-color: black;
-}
-
-
-/* reference: https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-area_named3 */
-
-.grid-example .logo {
-grid-area: logo;
-}
-
-.grid-example .navigation {
-grid-area: navigation;
-}
-
-
-/* Style the top navigation bar */
-
-.grid-example .navbar {
-display: grid;
-grid-template-areas: 'logo logo logo logo logo navigation';
-align-items: center;
-background-color: #c3ffeb;
-justify-content: space-between;
-padding: 14px 0px;
-}
-
-
-/* Style the navigation bar links */
-
-.grid-example .navbar a {
-color: black;
-padding: 14px 20px;
-text-decoration: none;
-text-align: center;
-}
-
-
-/* Change color on hover */
-
-.grid-example .navbar a:hover {
-background-color: #c3ffeb;
-color: black;
-}
-
-
-/* Project column */
-
-.grid-example .project {
-width: auto;
-background-color: rgb(250, 246, 246);
-padding: 10px;
-}
-
-
-/* Fake image, just for this example */
-
-.grid-example .fakeimg {
-background-color: rgb(195, 255, 235);
-width: 100%;
-height: 100px;
-padding: 20px;
-}
-
-
-/* Footer */
-
-.grid-example .footer {
-padding: 5px;
-text-align: center;
-background: #ffe4c4;
-color: black;
-margin-top: 10px;
-}
-
-.button {
-display: inline-block;
-/* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-background-color: #0FCBBF;
-color: #474747;
-/* needed to override the default link color */
-font-weight: 400;
-text-decoration: none;
-padding: 10px;
-border-radius: 10px;
-border-bottom: 3px solid #0DA59B;
-/* width of the border, type, color */
-transition: background-color 0.2s ease-out;
-}
-
-.button:hover {
-background-color: white;
-}
-
-.button.contact {
-background-color: #0FCBBF;
-color: #ffffff;
-text-transform: uppercase;
-border: 2px solid #0DA59B;
-}
-
-.button.contact:hover {
-background-color: transparent;
-color: #0DA59B;
-}
-
-.button.viewcv {
-background-color: #0FCBBF;
-color: #ffffff;
-text-transform: uppercase;
-border: 2px solid #0DA59B;
-}
-
-.button.viewcv:hover {
-background-color: transparent;
-color: #0DA59B;
-}
-
-.button.readmore {
-background-color: transparent;
-color: #0DA59B;
-text-transform: lowercase;
-border: 2px solid #0DA59B;
-}
-
-
-/* ==============================
-Medium devices (640px and larger)
-================================= */
-
-@media only screen and (min-width: 641px) {
-* {
-box-sizing: border-box;
-}
-header {
-background-color: #0FCBBF;
-padding: 20px 0 13px;
-margin: 10px;
-padding-top: 10px;
-padding-right: 5px;
-padding-bottom: 15px;
-padding-left: 5px;
-border-radius: 10px;
-}
-nav {
-width: auto;
-float: right;
-margin-top: 4px;
-}
-nav>ul {
-margin: 1em 0;
-}
-nav > ul > li {
-  display: inline-block;
-}
-nav>ul>li>a {
-padding: 0 15px;
-text-transform: uppercase;
-font-weight: 700;
-color: #ffffff;
-}
-nav>ul>li>a:visited {
-padding: 0 15px;
-text-transform: uppercase;
-font-weight: 700;
-color: #000000;
-}
-nav>ul>li>a:hover {
-padding: 0 15px;
-text-transform: uppercase;
-font-weight: 700;
-color: #095B56;
-}
-.navtoggle.responsive nav {
-padding: 0px;
-}
-.navtoggle.responsive nav {
-padding: 24px 0 0;
-}
-.navtoggle.responsive li:last-child {
-padding: 0 0 10px;
-}
-.navtoggle li:last-child) {
-display: none;
-}
-.navtoggle li:not(:last-child) {
-display: none;
-}
-.navtoggle li:not(:last-child) {
-display: inline-block;
-border-top: none;
-padding: 0px;
-}
-body {
-background-color: #F5D9B0;
-font-family: 'Merriweather', serif;
-font-size: 18px;
-/* Sets the font size to 16px */
-font-weight: 300;
-/* Sets the font weight to 300 */
-line-height: 1.6;
-/* Sets the line-height to 1.6 * the font-size */
-color: #000000;
-}
-h1,
-h2,
-h3,
-h4 {
-line-height: 1.4;
-}
-h1 {
-font-size: 2.75em;
-font-weight: 700;
-text-align: center;
-}
-h2 {
-font-size: 2.25em;
-font-weight: 300;
-}
-h3 {
-font-size: 1.75em;
-font-weight: 200;
-}
-h4 {
-font-size: 1.35em;
-font-weight: 200;
-}
-a {
-color: #0DA59B;
-text-decoration: none;
-/* No underlining */
-}
-a:hover {
-color: #C7603A;
-text-decoration: underline;
-/* Underlining when hovering over a link */
-}
-a:visited {
-/* visited link */
-color: #C7603A;
-}
-a:active {
-/* selected link */
-color: #3F13AB;
-}
-img {
-width: 100%;
-}
-.row {
-margin: 25px 0;
-/* 25px top and bottom, 0 left and right */
-}
-.container {
-padding: 0 15px;
-}
-.logo {
-max-width: 150px;
-min-width: 641px;
-align-items: center;
-}
-#hero h1 {
-text-align: center;
-/* Centers text */
-}
-#hero h2 {
-text-align: center;
-/* Centers text */
-}
-#hero {
-text-align: center;
-background-color: #ffe4c4;
-padding: 10px 0;
-display: inline-block;
-width: 100%;
-}
-#hero span {
-display: block;
-}
-#footer {
-background-color: #ffe4c4;
-padding: 10px 0;
-display: inline-block;
-width: 100%;
-}
-main {
-padding-top: 56px;
-}
-.col-md-6 {
-width: 50%;
-}
-[class*="col-"] {
-float: left;
-padding: 10px 0;
-}
-@keyframes color-change {
-0% {
-fill: #0FCBBF;
-}
-50% {
-fill: #fcffad;
-}
-75% {
-fill: #2db625;
-}
-100% {
-fill: #b66425;
-}
-}
-.sun {
-animation-duration: 8s;
-animation-name: color-change;
-animation-iteration-count: infinite;
-animation-direction: infinite;
-animation-timing-function: ease-in;
-}
-@keyframes cloud-move {
-from {
-transform: translate(10px, 50px);
-}
-to {
-transform: translate(100px, 50px);
-}
-}
-.cloud-front {
-animation-name: color-change;
-animation-duration: 20s;
-animation-name: cloud-move;
-animation-iteration-count: infinite;
-animation-direction: alternate;
-animation-timing-function: linear;
-}
-@keyframes cloud-move-reverse {
-from {
-transform: translate(446px, 38px);
-}
-to {
-transform: translate(100px, 38px);
-}
-}
-.cloud-back {
-animation: 20s cloud-move-reverse infinite alternate ease-in;
-}
-.row::after {
-content: "";
-clear: both;
-display: table;
-}
-selector {
-margin: 0 auto;
-/* No spacing to top and bottom and auto spacing to left and right */
-}
-#about-page h3 {
-margin-top: 0;
-}
-/* Layout styling */
-.container {
-border-radius: 10px;
-padding: 0 15px;
-}
-.container {
-max-width: 1200px;
-margin-left: auto;
-margin-right: auto;
-}
-.row {
-margin: 25px 0;
-/* 25px top and bottom, 0 left and right */
-}
-#work .row {
-padding-bottom: 20px;
-border-bottom: 1px solid #4a4a4a;
-}
-/* Flexbox example start */
-/* Reference: https://www.w3schools.com/css/css3_flexbox.asp */
-.flexbox-example {
-background-color: transparent;
-border: 1px dotted transparent;
-padding: 0px 20px;
-}
-/* Header */
-.flexbox-example .header {
-padding: 50px;
-align-items: center;
-background: #0FCBBF;
-color: white;
-}
-/* Style the top navigation bar */
-.flexbox-example .navbar {
-display: flex;
-justify-content: space-between;
-align-items: center;
-background-color: #0FCBBF;
-}
-.flexbox-example .align-left {
-display: flex;
-justify-content: flex-start;
-}
-.flexbox-example .align-right {
-display: flex;
-justify-content: flex-end;
-}
-/* Style the navigation bar links */
-.flexbox-example .navbar a {
-color: black;
-padding: 14px 20px;
-text-decoration: none;
-text-align: center;
-}
-/* Change color on hover */
-.flexbox-example .navbar a:hover {
-background-color: #c3ffeb;
-color: #C7603A;
-}
-/* Column container */
-.flexbox-example .row {
-display: flex;
-flex-wrap: wrap;
-justify-content: flex-start;
-margin: 0 auto;
-}
-/* Main column */
-.flexbox-example .project {
-width: 32.33%;
-background-color: #ffe4c4;
-margin: 5px;
-padding: 10px;
-}
-/* Footer */
-.flexbox-example .footer {
-padding: 5px;
-text-align: center;
-background: #ffe4c4;
-color: black;
-margin-top: 10px;
-}
-/* Grid layout example start */
-/* Reference: https://www.w3schools.com/css/css_grid.asp */
-.grid-example {
-background-color: transparent;
-border: 1px dotted black;
-padding: 0px 20px;
-}
-.grid-example .grid-container {
-display: grid;
-grid-template-columns: auto auto auto auto;
-grid-gap: 10px;
-padding: 10px;
-align-content: center;
-}
-/* Header */
-.grid-example .header {
-padding: 50px;
-text-align: center;
-background: #55baf5;
-color: black;
-}
-/* reference: https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-area_named3 */
-.grid-example .logo {
-grid-area: logo;
-}
-.grid-example .navigation {
-grid-area: navigation;
-}
-/* Style the top navigation bar */
-.grid-example .navbar {
-display: grid;
-grid-template-areas: 'logo logo logo logo logo navigation';
-align-items: center;
-background-color: #c3ffeb;
-justify-content: space-between;
-padding: 14px 0px;
-}
-/* Style the navigation bar links */
-.grid-example .navbar a {
-color: black;
-padding: 14px 20px;
-text-decoration: none;
-text-align: center;
-}
-/* Change color on hover */
-.grid-example .navbar a:hover {
-background-color: #c3ffeb;
-color: black;
-}
-/* Project column */
-.grid-example .project {
-width: auto;
-background-color: rgb(250, 246, 246);
-padding: 10px;
-}
-/* Fake image, just for this example */
-.grid-example .fakeimg {
-background-color: rgb(195, 255, 235);
-width: 100%;
-height: 100px;
-padding: 20px;
-}
-/* Footer */
-.grid-example .footer {
-padding: 5px;
-text-align: center;
-background: #ffe4c4;
-color: black;
-margin-top: 10px;
-}
-.button {
-display: inline-block;
-/* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-background-color: #0FCBBF;
-color: #ffffff;
-/* needed to override the default link color */
-font-weight: 400;
-text-decoration: none;
-padding: 10px;
-border-radius: 10px;
-border-bottom: 3px solid #0DA59B;
-/* width of the border, type, color */
-transition: background-color 0.2s ease-out;
-}
-.button:hover {
-background-color: white;
-}
-.button.contact {
-background-color: #0FCBBF;
-color: #ffffff;
-text-transform: uppercase;
-border: 2px solid #0DA59B;
-}
-.button.contact:hover {
-background-color: transparent;
-color: #0DA59B;
-}
-.button.viewcv {
-background-color: #0FCBBF;
-color: #ffffff;
-text-transform: uppercase;
-border: 2px solid #0DA59B;
-}
-.button.viewcv:hover {
-background-color: transparent;
-color: #0DA59B;
-}
-.button.readmore {
-background-color: transparent;
-color: #0DA59B;
-text-transform: lowercase;
-border: 2px solid #0DA59B;
-}
-/* ==============================
-Large devices (1024px or larger)
-================================= */
-@media only screen and (min-width: 1024px) {
-* {
-box-sizing: border-box;
-}
-header {
-background-color: #0FCBBF;
-padding: 20px 0 13px;
-margin: 10px;
-padding-top: 10px;
-padding-right: 5px;
-padding-bottom: 15px;
-padding-left: 5px;
-border-radius: 10px;
-}
-body {
-background-color: #F5D9B0;
-font-family: 'Merriweather', serif;
-font-size: 20px;
-/* Sets the font size to 16px */
-font-weight: 350;
-/* Sets the font weight to 300 */
-line-height: 1.7;
-/* Sets the line-height to 1.6 * the font-size */
-color: #000000;
-}
-h1,
-h2,
-h3,
-h4 {
-line-height: 1.5;
-}
-h1 {
-font-size: 2.75em;
-font-weight: 750;
-text-align: center;
-}
-h2 {
-font-size: 2.25em;
-font-weight: 350;
-}
-h3 {
-font-size: 1.75em;
-font-weight: 250;
-}
-h4 {
-font-size: 1.35em;
-font-weight: 250;
-}
-a {
-color: #0DA59B;
-text-decoration: none;
-/* No underlining */
-}
-a:hover {
-color: #C7603A;
-text-decoration: underline;
-/* Underlining when hovering over a link */
-}
-a:visited {
-/* visited link */
-color: #C7603A;
-}
-a:active {
-/* selected link */
-color: #3F13AB;
-}
-img {
-width: 100%;
-}
-.navtoggle,
-.navtoggle.responsive {
-position: relative;
-}
-.navtoggle.responsive li {
-display: block;
-}
-.row {
-margin: 25px 0;
-/* 25px top and bottom, 0 left and right */
-}
-.container {
-padding: 0 15px;
-}
-.logo {
-max-width: 150px;
-text-align: center;
-}
-#hero h1 {
-text-align: center;
-/* Centers text */
-}
-#hero h2 {
-text-align: center;
-/* Centers text */
-}
-#hero {
-text-align: center;
-background-color: #ffe4c4;
-padding: 10px 0;
-display: inline-block;
-width: 100%;
-}
-#hero span {
-display: block;
-}
-#footer {
-background-color: #ffe4c4;
-padding: 10px 0;
-display: inline-block;
-width: 100%;
-}
-main {
-padding-top: 133px;
-}
-.col-md-6 {
-width: 50%;
-}
-[class*="col-"] {
-float: left;
-padding: 10px 0;
-}
-@keyframes color-change {
-0% {
-  fill: #0FCBBF;
-}
-50% {
-  fill: #fcffad;
-}
-75% {
-  fill: #2db625;
-}
-100% {
-  fill: #b66425;
-}
-}
-.sun {
-animation-duration: 8s;
-animation-name: color-change;
-animation-iteration-count: infinite;
-animation-direction: infinite;
-animation-timing-function: ease-in;
-}
-@keyframes cloud-move {
-from {
-  transform: translate(10px, 50px);
-}
-to {
-  transform: translate(100px, 50px);
-}
-}
-.cloud-front {
-animation-name: color-change;
-animation-duration: 20s;
-animation-name: cloud-move;
-animation-iteration-count: infinite;
-animation-direction: alternate;
-animation-timing-function: linear;
-}
-@keyframes cloud-move-reverse {
-from {
-  transform: translate(446px, 38px);
-}
-to {
-  transform: translate(100px, 38px);
-}
-}
-.cloud-back {
-animation: 20s cloud-move-reverse infinite alternate ease-in;
-}
-.row::after {
-content: "";
-clear: both;
-display: table;
-}
-selector {
-margin: 0 auto;
-/* No spacing to top and bottom and auto spacing to left and right */
-}
-#about-page h3 {
-margin-top: 0;
-}
-/* Layout styling */
-.container {
-border-radius: 10px;
-padding: 0 15px;
-}
-.container {
-max-width: 1200px;
-margin-left: auto;
-margin-right: auto;
-}
-.row {
-margin: 25px 0;
-/* 25px top and bottom, 0 left and right */
-}
-nav {
-width: auto;
-float: right;
-margin-top: 4px;
-}
-nav>ul {
-list-style-type: none;
-padding: 0;
-}
-nav>ul>li>a {
-padding: 0 15px;
-text-transform: uppercase;
-font-weight: 700;
-color: #ffffff;
-}
-nav>ul>li>a:visited {
-padding: 0 15px;
-text-transform: uppercase;
-font-weight: 700;
-color: #000000;
-}
-nav>ul>li>a:hover {
-padding: 0 15px;
-text-transform: uppercase;
-font-weight: 700;
-color: #095B56;
-}
-#work .row {
-padding-bottom: 20px;
-border-bottom: 1px solid #4a4a4a;
-}
-/* Flexbox example start */
-/* Reference: https://www.w3schools.com/css/css3_flexbox.asp */
-.flexbox-example {
-background-color: transparent;
-border: 1px dotted transparent;
-padding: 0px 20px;
-}
-/* Header */
-.flexbox-example .header {
-padding: 50px;
-text-align: center;
-background: #0FCBBF;
-color: white;
-}
-/* Style the top navigation bar */
-.flexbox-example .navbar {
-display: flex;
-justify-content: space-between;
-background-color: #0FCBBF;
-}
-.flexbox-example .align-left {
-display: flex;
-justify-content: flex-start;
-}
-.flexbox-example .align-right {
-display: flex;
-justify-content: flex-end;
-}
-/* Style the navigation bar links */
-.flexbox-example .navbar a {
-color: black;
-padding: 14px 20px;
-text-decoration: none;
-text-align: center;
-}
-/* Change color on hover */
-.flexbox-example .navbar a:hover {
-background-color: #c3ffeb;
-color: #C7603A;
-}
-/* Column container */
-.flexbox-example .row {
-display: flex;
-flex-wrap: wrap;
-justify-content: flex-start;
-margin: 0 auto;
-}
-/* Main column */
-.flexbox-example .project {
-width: 32.33%;
-background-color: #ffe4c4;
-margin: 5px;
-padding: 10px;
-}
-/* Footer */
-.flexbox-example .footer {
-padding: 5px;
-text-align: center;
-background: #ffe4c4;
-color: black;
-margin-top: 10px;
-}
-/* Grid layout example start */
-/* Reference: https://www.w3schools.com/css/css_grid.asp */
-.grid-example {
-background-color: transparent;
-border: 1px dotted black;
-padding: 0px 20px;
-}
-.grid-example .grid-container {
-display: grid;
-grid-template-columns: auto auto auto auto;
-grid-gap: 10px;
-padding: 10px;
-align-content: center;
-}
-/* Header */
-.grid-example .header {
-padding: 50px;
-text-align: center;
-align-items: center;
-background: #55baf5;
-color: black;
-}
-/* reference: https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-area_named3 */
-.grid-example .logo {
-grid-area: logo;
-}
-.grid-example .navigation {
-grid-area: navigation;
-}
-/* Style the top navigation bar */
-.grid-example .navbar {
-display: grid;
-grid-template-areas: 'logo logo logo logo logo navigation';
-align-items: center;
-background-color: #c3ffeb;
-justify-content: space-between;
-padding: 14px 0px;
-}
-/* Style the navigation bar links */
-.grid-example .navbar a {
-color: black;
-padding: 14px 20px;
-align-items: center;
-text-decoration: none;
-text-align: center;
-}
-/* Change color on hover */
-.grid-example .navbar a:hover {
-background-color: #c3ffeb;
-color: black;
-}
-/* Project column */
-.grid-example .project {
-width: auto;
-background-color: rgb(250, 246, 246);
-padding: 10px;
-}
-/* Fake image, just for this example */
-.grid-example .fakeimg {
-background-color: rgb(195, 255, 235);
-width: 100%;
-height: 100px;
-padding: 20px;
-}
-/* Footer */
-.grid-example .footer {
-padding: 5px;
-text-align: center;
-background: #ffe4c4;
-color: black;
-margin-top: 10px;
-}
-.button {
-display: inline-block;
-/* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-background-color: #0FCBBF;
-color: #ffffff;
-/* needed to override the default link color */
-font-weight: 400;
-text-decoration: none;
-padding: 10px;
-border-radius: 10px;
-border-bottom: 3px solid #0DA59B;
-/* width of the border, type, color */
-transition: background-color 0.2s ease-out;
-}
-.button:hover {
-background-color: white;
-}
-.button.contact {
-background-color: #0FCBBF;
-color: #ffffff;
-text-transform: uppercase;
-border: 2px solid #0DA59B;
-}
-.button.contact:hover {
-background-color: transparent;
-color: #0DA59B;
-}
-.button.viewcv {
-background-color: #0FCBBF;
-color: #ffffff;
-text-transform: uppercase;
-border: 2px solid #0DA59B;
-}
-.button.viewcv:hover {
-background-color: transparent;
-color: #0DA59B;
-}
-.button.readmore {
-background-color: transparent;
-color: #0DA59B;
-text-transform: lowercase;
-border: 2px solid #0DA59B;
-}
-/* ==============================
-Large devices (1024px or larger)
-================================= */
-@media only screen and (min-width: 1024px) {
-* {
   box-sizing: border-box;
 }
+
 header {
-  align-items: center;
   background-color: #0FCBBF;
-  padding: 25px 0 14px;
-  margin: 10px;
-  padding-top: 10px;
-  padding-right: 5px;
-  padding-bottom: 15px;
-  padding-left: 5px;
-  border-radius: 10px;
+  padding: 10px 0 4px;
 }
-body {
-  background-color: #F5D9B0;
-  font-family: 'Merriweather', serif;
-  font-size: 20px;
-  /* Sets the font size to 16px */
-  font-weight: 350;
-  /* Sets the font weight to 300 */
-  line-height: 1.7;
-  /* Sets the line-height to 1.6 * the font-size */
-  color: #000000;
+
+main {
+  padding-top: 56px;
 }
-nav>ul>li {
-  display: inline-block;
+
+.logo {
+  max-width: 150px;
 }
-h1,
-h2,
-h3,
-h4 {
-  line-height: 1.5;
-}
-h1 {
-  font-size: 2.75em;
-  font-weight: 750;
-  text-align: center;
-}
-h2 {
-  font-size: 2.25em;
-  font-weight: 250;
-}
-h3 {
-  font-size: 1.75em;
-  font-weight: 250;
-}
-h4 {
-  font-size: 1.35em;
-  font-weight: 250;
-}
-a {
-  color: #0DA59B;
-  text-decoration: none;
-  /* No underlining */
-}
+
 nav {
+  display: inline-block;
   width: auto;
   float: right;
   margin-top: 4px;
+  text-align: center;
+  position: relative;
 }
+
 nav>ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
-nav>ul>li {
-  display: inline-block;
-}
-nav>ul>li>a {
-  padding: 0 20px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #ffffff;
-}
-nav>ul>li>a:visited {
-  padding: 0 20px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #000000;
-}
-nav>ul>li>a:hover {
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #095B56;
-}
-.navtoggle li:last-child {
+
+.navtoggle li:not(:last-child) {
   display: none;
 }
-a:hover {
-  color: #C7603A;
-  text-decoration: underline;
-  /* Underlining when hovering over a link */
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
 }
-a:visited {
-  /* visited link */
-  color: #C7603A;
+
+.navtoggle,
+.navtoggle.responsive {
+  position: relative;
 }
-a:active {
-  /* selected link */
-  color: #3F13AB;
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
 }
-img {
-  width: 100%;
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
 }
-.row {
-  margin: 30px 0;
-  /* 25px top and bottom, 0 left and right */
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
 }
-.container {
-  padding: 0 20px;
-}
-.logo {
-  max-width: 300px;
-  text-align: center;
-  align-items: center;
-}
-#hero h1 {
-  text-align: center;
-  /* Centers text */
-}
-#hero h2 {
-  text-align: center;
-  /* Centers text */
-}
-#hero {
-  text-align: center;
-  background-color: #ffe4c4;
-  padding: 15px 0;
-  display: inline-block;
-  width: 100%;
-}
-#hero span {
+
+#navbar .container {
   display: block;
 }
-#footer {
-  background-color: #ffe4c4;
-  padding: 15px 0;
-  display: inline-block;
-  width: 100%;
-}
-main {
-  padding-top: 143px;
-}
-.col-md-6 {
-  width: 50%;
-}
-[class*="col-"] {
-  float: left;
-  padding: 15px 0;
-}
-@keyframes color-change {
-  0% {
-    fill: #0FCBBF;
-  }
-  50% {
-    fill: #fcffad;
-  }
-  75% {
-    fill: #2db625;
-  }
-  100% {
-    fill: #b66425;
-  }
-}
-.sun {
-  animation-duration: 8s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: infinite;
-  animation-timing-function: ease-in;
-}
-@keyframes cloud-move {
-  from {
-    transform: translate(10px, 50px);
-  }
-  to {
-    transform: translate(100px, 50px);
-  }
-}
-.cloud-front {
-  animation-name: color-change;
-  animation-duration: 20s;
-  animation-name: cloud-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 38px);
-  }
-  to {
-    transform: translate(100px, 38px);
-  }
-}
-.cloud-back {
-  animation: 20s cloud-move-reverse infinite alternate ease-in;
-}
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-selector {
-  margin: 0 auto;
-  /* No spacing to top and bottom and auto spacing to left and right */
-}
-#about-page h3 {
-  margin-top: 0;
-}
-/* Layout styling */
-.container {
-  border-radius: 15px;
-  padding: 0 20px;
-}
-.container {
-  max-width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.row {
-  margin: 30px 0;
-  /* 25px top and bottom, 0 left and right */
-}
+
 #work .row {
   padding-bottom: 20px;
   border-bottom: 1px solid #4a4a4a;
 }
+
 /* Flexbox example start */
 /* Reference: https://www.w3schools.com/css/css3_flexbox.asp */
 .flexbox-example {
@@ -1383,39 +77,48 @@ selector {
   border: 1px dotted transparent;
   padding: 0px 20px;
 }
+
 /* Header */
 .flexbox-example .header {
   padding: 50px;
-  text-align: center;
+  align-items: center;
   background: #0FCBBF;
   color: white;
 }
+
 /* Style the top navigation bar */
 .flexbox-example .navbar {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   background-color: #0FCBBF;
 }
+
 .flexbox-example .align-left {
   display: flex;
   justify-content: flex-start;
 }
+
 .flexbox-example .align-right {
   display: flex;
   justify-content: flex-end;
 }
+
 /* Style the navigation bar links */
 .flexbox-example .navbar a {
   color: black;
   padding: 14px 20px;
   text-decoration: none;
+  align-items: center;
   text-align: center;
 }
+
 /* Change color on hover */
 .flexbox-example .navbar a:hover {
-  background-color: #c3ffeb;
+  background-color: transparent;
   color: #C7603A;
 }
+
 /* Column container */
 .flexbox-example .row {
   display: flex;
@@ -1423,6 +126,7 @@ selector {
   justify-content: flex-start;
   margin: 0 auto;
 }
+
 /* Main column */
 .flexbox-example .project {
   width: 32.33%;
@@ -1430,6 +134,7 @@ selector {
   margin: 5px;
   padding: 10px;
 }
+
 /* Footer */
 .flexbox-example .footer {
   padding: 5px;
@@ -1438,6 +143,7 @@ selector {
   color: black;
   margin-top: 10px;
 }
+
 /* Grid layout example start */
 /* Reference: https://www.w3schools.com/css/css_grid.asp */
 .grid-example {
@@ -1445,6 +151,7 @@ selector {
   border: 1px dotted black;
   padding: 0px 20px;
 }
+
 .grid-example .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -1452,20 +159,23 @@ selector {
   padding: 10px;
   align-content: center;
 }
+
 /* Header */
 .grid-example .header {
   padding: 50px;
-  text-align: center;
   background: #55baf5;
   color: black;
 }
+
 /* reference: https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-area_named3 */
 .grid-example .logo {
   grid-area: logo;
 }
+
 .grid-example .navigation {
   grid-area: navigation;
 }
+
 /* Style the top navigation bar */
 .grid-example .navbar {
   display: grid;
@@ -1475,6 +185,7 @@ selector {
   justify-content: space-between;
   padding: 14px 0px;
 }
+
 /* Style the navigation bar links */
 .grid-example .navbar a {
   color: black;
@@ -1482,17 +193,20 @@ selector {
   text-decoration: none;
   text-align: center;
 }
+
 /* Change color on hover */
 .grid-example .navbar a:hover {
   background-color: #c3ffeb;
   color: black;
 }
+
 /* Project column */
 .grid-example .project {
   width: auto;
   background-color: rgb(250, 246, 246);
   padding: 10px;
 }
+
 /* Fake image, just for this example */
 .grid-example .fakeimg {
   background-color: rgb(195, 255, 235);
@@ -1500,6 +214,7 @@ selector {
   height: 100px;
   padding: 20px;
 }
+
 /* Footer */
 .grid-example .footer {
   padding: 5px;
@@ -1508,11 +223,12 @@ selector {
   color: black;
   margin-top: 10px;
 }
+
 .button {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #0FCBBF;
-  color: #ffffff;
+  color: #474747;
   /* needed to override the default link color */
   font-weight: 400;
   text-decoration: none;
@@ -1522,32 +238,1506 @@ selector {
   /* width of the border, type, color */
   transition: background-color 0.2s ease-out;
 }
+
 .button:hover {
-  background-color: white;
+  background-color: #0FCBBF;
 }
+
 .button.contact {
   background-color: #0FCBBF;
   color: #ffffff;
   text-transform: uppercase;
   border: 2px solid #0DA59B;
 }
+
 .button.contact:hover {
   background-color: transparent;
   color: #0DA59B;
 }
+
 .button.viewcv {
   background-color: #0FCBBF;
   color: #ffffff;
   text-transform: uppercase;
   border: 2px solid #0DA59B;
 }
+
 .button.viewcv:hover {
   background-color: transparent;
   color: #0DA59B;
 }
+
 .button.readmore {
   background-color: transparent;
   color: #0DA59B;
   text-transform: lowercase;
   border: 2px solid #0DA59B;
 }
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 641px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  header {
+    background-color: #0FCBBF;
+    padding: 20px 0 13px;
+    margin: 10px;
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    border-radius: 10px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  nav>ul {
+    margin: 1em 0;
+  }
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  nav>ul>li>a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ffffff;
+  }
+
+  nav>ul>li>a:visited {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000000;
+  }
+
+  nav>ul>li>a:hover {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #095B56;
+  }
+
+  .navtoggle.responsive nav {
+    padding: 0px;
+  }
+
+  .navtoggle.responsive nav {
+    padding: 24px 0 0;
+  }
+
+  .navtoggle.responsive li:last-child {
+    padding: 0 0 10px;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+    border-top: none;
+    padding: 0px;
+  }
+
+  body {
+    background-color: #F5D9B0;
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    /* Sets the font size to 16px */
+    font-weight: 300;
+    /* Sets the font weight to 300 */
+    line-height: 1.6;
+    /* Sets the line-height to 1.6 * the font-size */
+    color: #000000;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1.4;
+  }
+
+  h1 {
+    font-size: 2.75em;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 2.25em;
+    font-weight: 300;
+  }
+
+  h3 {
+    font-size: 1.75em;
+    font-weight: 200;
+  }
+
+  h4 {
+    font-size: 1.35em;
+    font-weight: 200;
+  }
+
+  a {
+    color: #0DA59B;
+    text-decoration: none;
+    /* No underlining */
+  }
+
+  a:hover {
+    color: #C7603A;
+    text-decoration: underline;
+    /* Underlining when hovering over a link */
+  }
+
+  a:visited {
+    /* visited link */
+    color: #C7603A;
+  }
+
+  a:active {
+    /* selected link */
+    color: #3F13AB;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .row {
+    margin: 25px 0;
+    /* 25px top and bottom, 0 left and right */
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .logo {
+    max-width: 150px;
+    min-width: 641px;
+    align-items: center;
+  }
+
+  #hero h1 {
+    text-align: center;
+    /* Centers text */
+  }
+
+  #hero h2 {
+    text-align: center;
+    /* Centers text */
+  }
+
+  #hero {
+    text-align: center;
+    background-color: #ffe4c4;
+    padding: 10px 0;
+    display: inline-block;
+    width: 100%;
+  }
+
+  #hero span {
+    display: block;
+  }
+
+  #footer {
+    background-color: #ffe4c4;
+    padding: 10px 0;
+    display: inline-block;
+    width: 100%;
+  }
+
+  main {
+    padding-top: 56px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px 0;
+  }
+
+  @keyframes color-change {
+    0% {
+      fill: #0FCBBF;
+    }
+
+    50% {
+      fill: #fcffad;
+    }
+
+    75% {
+      fill: #2db625;
+    }
+
+    100% {
+      fill: #b66425;
+    }
+  }
+
+  .sun {
+    animation-duration: 8s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: infinite;
+    animation-timing-function: ease-in;
+  }
+
+  @keyframes cloud-move {
+    from {
+      transform: translate(10px, 50px);
+    }
+
+    to {
+      transform: translate(100px, 50px);
+    }
+  }
+
+  .cloud-front {
+    animation-name: color-change;
+    animation-duration: 20s;
+    animation-name: cloud-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+
+  @keyframes cloud-move-reverse {
+    from {
+      transform: translate(446px, 38px);
+    }
+
+    to {
+      transform: translate(100px, 38px);
+    }
+  }
+
+  .cloud-back {
+    animation: 20s cloud-move-reverse infinite alternate ease-in;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  selector {
+    margin: 0 auto;
+    /* No spacing to top and bottom and auto spacing to left and right */
+  }
+
+  #about-page h3 {
+    margin-top: 0;
+  }
+
+  /* Layout styling */
+  .container {
+    border-radius: 10px;
+    padding: 0 15px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .row {
+    margin: 25px 0;
+    /* 25px top and bottom, 0 left and right */
+  }
+
+  #work .row {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #4a4a4a;
+  }
+
+  /* Flexbox example start */
+  /* Reference: https://www.w3schools.com/css/css3_flexbox.asp */
+  .flexbox-example {
+    background-color: transparent;
+    border: 1px dotted transparent;
+    padding: 0px 20px;
+  }
+
+  /* Header */
+  .flexbox-example .header {
+    padding: 50px;
+    align-items: center;
+    background: #0FCBBF;
+    color: white;
+  }
+
+  /* Style the top navigation bar */
+  .flexbox-example .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0FCBBF;
+  }
+
+  .flexbox-example .align-left {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .flexbox-example .align-right {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  /* Style the navigation bar links */
+  .flexbox-example .navbar a {
+    color: black;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  /* Change color on hover */
+  .flexbox-example .navbar a:hover {
+    background-color: #c3ffeb;
+    color: #C7603A;
+  }
+
+  /* Column container */
+  .flexbox-example .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0 auto;
+  }
+
+  /* Main column */
+  .flexbox-example .project {
+    width: 32.33%;
+    background-color: #ffe4c4;
+    margin: 5px;
+    padding: 10px;
+  }
+
+  /* Footer */
+  .flexbox-example .footer {
+    padding: 5px;
+    text-align: center;
+    background: #ffe4c4;
+    color: black;
+    margin-top: 10px;
+  }
+
+  /* Grid layout example start */
+  /* Reference: https://www.w3schools.com/css/css_grid.asp */
+  .grid-example {
+    background-color: transparent;
+    border: 1px dotted black;
+    padding: 0px 20px;
+  }
+
+  .grid-example .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+    align-content: center;
+  }
+
+  /* Header */
+  .grid-example .header {
+    padding: 50px;
+    text-align: center;
+    background: #55baf5;
+    color: black;
+  }
+
+  /* reference: https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-area_named3 */
+  .grid-example .logo {
+    grid-area: logo;
+  }
+
+  .grid-example .navigation {
+    grid-area: navigation;
+  }
+
+  /* Style the top navigation bar */
+  .grid-example .navbar {
+    display: grid;
+    grid-template-areas: 'logo logo logo logo logo navigation';
+    align-items: center;
+    background-color: #c3ffeb;
+    justify-content: space-between;
+    padding: 14px 0px;
+  }
+
+  /* Style the navigation bar links */
+  .grid-example .navbar a {
+    color: black;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  /* Change color on hover */
+  .grid-example .navbar a:hover {
+    background-color: #c3ffeb;
+    color: black;
+  }
+
+  /* Project column */
+  .grid-example .project {
+    width: auto;
+    background-color: rgb(250, 246, 246);
+    padding: 10px;
+  }
+
+  /* Fake image, just for this example */
+  .grid-example .fakeimg {
+    background-color: rgb(195, 255, 235);
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+  }
+
+  /* Footer */
+  .grid-example .footer {
+    padding: 5px;
+    text-align: center;
+    background: #ffe4c4;
+    color: black;
+    margin-top: 10px;
+  }
+
+  .button {
+    display: inline-block;
+    /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    background-color: #0FCBBF;
+    color: #474747;
+    /* needed to override the default link color */
+    font-weight: 400;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    border-bottom: 3px solid #0DA59B;
+    /* width of the border, type, color */
+    transition: background-color 0.2s ease-out;
+  }
+
+  .button:hover {
+    background-color: #0FCBBF;
+  }
+
+  .button.contact {
+    background-color: #0FCBBF;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: 2px solid #0DA59B;
+  }
+
+  .button.contact:hover {
+    background-color: transparent;
+    color: #0DA59B;
+  }
+
+  .button.viewcv {
+    background-color: #0FCBBF;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: 2px solid #0DA59B;
+  }
+
+  .button.viewcv:hover {
+    background-color: transparent;
+    color: #0DA59B;
+  }
+
+  .button.readmore {
+    background-color: transparent;
+    color: #0DA59B;
+    text-transform: lowercase;
+    border: 2px solid #0DA59B;
+  }
+
+  /* ==============================
+Large devices (1024px or larger)
+================================= */
+  @media only screen and (min-width: 1024px) {
+    * {
+      box-sizing: border-box;
+    }
+
+    header {
+      background-color: #0FCBBF;
+      padding: 20px 0 13px;
+      margin: 10px;
+      padding-top: 10px;
+      padding-right: 5px;
+      padding-bottom: 15px;
+      padding-left: 5px;
+      border-radius: 10px;
+    }
+
+    body {
+      background-color: #F5D9B0;
+      font-family: 'Merriweather', serif;
+      font-size: 20px;
+      /* Sets the font size to 16px */
+      font-weight: 350;
+      /* Sets the font weight to 300 */
+      line-height: 1.7;
+      /* Sets the line-height to 1.6 * the font-size */
+      color: #000000;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      line-height: 1.5;
+    }
+
+    h1 {
+      font-size: 2.75em;
+      font-weight: 750;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 2.25em;
+      font-weight: 350;
+    }
+
+    h3 {
+      font-size: 1.75em;
+      font-weight: 250;
+    }
+
+    h4 {
+      font-size: 1.35em;
+      font-weight: 250;
+    }
+
+    a {
+      color: #0DA59B;
+      text-decoration: none;
+      /* No underlining */
+    }
+
+    a:hover {
+      color: #C7603A;
+      text-decoration: underline;
+      /* Underlining when hovering over a link */
+    }
+
+    a:visited {
+      /* visited link */
+      color: #C7603A;
+    }
+
+    a:active {
+      /* selected link */
+      color: #3F13AB;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .navtoggle,
+    .navtoggle.responsive {
+      position: relative;
+    }
+
+    .navtoggle.responsive li {
+      display: block;
+    }
+
+    .row {
+      margin: 25px 0;
+      /* 25px top and bottom, 0 left and right */
+    }
+
+    .container {
+      padding: 0 15px;
+    }
+
+    .logo {
+      max-width: 150px;
+      text-align: center;
+    }
+
+    #hero h1 {
+      text-align: center;
+      /* Centers text */
+    }
+
+    #hero h2 {
+      text-align: center;
+      /* Centers text */
+    }
+
+    #hero {
+      text-align: center;
+      background-color: #ffe4c4;
+      padding: 10px 0;
+      display: inline-block;
+      width: 100%;
+    }
+
+    #hero span {
+      display: block;
+    }
+
+    #footer {
+      background-color: #ffe4c4;
+      padding: 10px 0;
+      display: inline-block;
+      width: 100%;
+    }
+
+    main {
+      padding-top: 133px;
+    }
+
+    .col-md-6 {
+      width: 50%;
+    }
+
+    [class*="col-"] {
+      float: left;
+      padding: 10px 0;
+    }
+
+    @keyframes color-change {
+      0% {
+        fill: #0FCBBF;
+      }
+
+      50% {
+        fill: #fcffad;
+      }
+
+      75% {
+        fill: #2db625;
+      }
+
+      100% {
+        fill: #b66425;
+      }
+    }
+
+    .sun {
+      animation-duration: 8s;
+      animation-name: color-change;
+      animation-iteration-count: infinite;
+      animation-direction: infinite;
+      animation-timing-function: ease-in;
+    }
+
+    @keyframes cloud-move {
+      from {
+        transform: translate(10px, 50px);
+      }
+
+      to {
+        transform: translate(100px, 50px);
+      }
+    }
+
+    .cloud-front {
+      animation-name: color-change;
+      animation-duration: 20s;
+      animation-name: cloud-move;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-timing-function: linear;
+    }
+
+    @keyframes cloud-move-reverse {
+      from {
+        transform: translate(446px, 38px);
+      }
+
+      to {
+        transform: translate(100px, 38px);
+      }
+    }
+
+    .cloud-back {
+      animation: 20s cloud-move-reverse infinite alternate ease-in;
+    }
+
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    selector {
+      margin: 0 auto;
+      /* No spacing to top and bottom and auto spacing to left and right */
+    }
+
+    #about-page h3 {
+      margin-top: 0;
+    }
+
+    /* Layout styling */
+    .container {
+      border-radius: 10px;
+      padding: 0 15px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .row {
+      margin: 25px 0;
+      /* 25px top and bottom, 0 left and right */
+    }
+
+    nav {
+      width: auto;
+      float: right;
+      margin-top: 4px;
+    }
+
+    nav>ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    nav>ul>li>a {
+      padding: 0 15px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    nav>ul>li>a:visited {
+      padding: 0 15px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #000000;
+    }
+
+    nav>ul>li>a:hover {
+      padding: 0 15px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #095B56;
+    }
+
+    #work .row {
+      padding-bottom: 20px;
+      border-bottom: 1px solid #4a4a4a;
+    }
+
+    /* Flexbox example start */
+    /* Reference: https://www.w3schools.com/css/css3_flexbox.asp */
+    .flexbox-example {
+      background-color: transparent;
+      border: 1px dotted transparent;
+      padding: 0px 20px;
+    }
+
+    /* Header */
+    .flexbox-example .header {
+      padding: 50px;
+      text-align: center;
+      background: #0FCBBF;
+      color: white;
+    }
+
+    /* Style the top navigation bar */
+    .flexbox-example .navbar {
+      display: flex;
+      justify-content: space-between;
+      background-color: #0FCBBF;
+    }
+
+    .flexbox-example .align-left {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .flexbox-example .align-right {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    /* Style the navigation bar links */
+    .flexbox-example .navbar a {
+      color: black;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    /* Change color on hover */
+    .flexbox-example .navbar a:hover {
+      background-color: #c3ffeb;
+      color: #C7603A;
+    }
+
+    /* Column container */
+    .flexbox-example .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      margin: 0 auto;
+    }
+
+    /* Main column */
+    .flexbox-example .project {
+      width: 32.33%;
+      background-color: #ffe4c4;
+      margin: 5px;
+      padding: 10px;
+    }
+
+    /* Footer */
+    .flexbox-example .footer {
+      padding: 5px;
+      text-align: center;
+      background: #ffe4c4;
+      color: black;
+      margin-top: 10px;
+    }
+
+    /* Grid layout example start */
+    /* Reference: https://www.w3schools.com/css/css_grid.asp */
+    .grid-example {
+      background-color: transparent;
+      border: 1px dotted black;
+      padding: 0px 20px;
+    }
+
+    .grid-example .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      grid-gap: 10px;
+      padding: 10px;
+      align-content: center;
+    }
+
+    /* Header */
+    .grid-example .header {
+      padding: 50px;
+      text-align: center;
+      align-items: center;
+      background: #55baf5;
+      color: black;
+    }
+
+    /* reference: https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-area_named3 */
+    .grid-example .logo {
+      grid-area: logo;
+    }
+
+    .grid-example .navigation {
+      grid-area: navigation;
+    }
+
+    /* Style the top navigation bar */
+    .grid-example .navbar {
+      display: grid;
+      grid-template-areas: 'logo logo logo logo logo navigation';
+      align-items: center;
+      background-color: #c3ffeb;
+      justify-content: space-between;
+      padding: 14px 0px;
+    }
+
+    /* Style the navigation bar links */
+    .grid-example .navbar a {
+      color: black;
+      padding: 14px 20px;
+      align-items: center;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    /* Change color on hover */
+    .grid-example .navbar a:hover {
+      background-color: #c3ffeb;
+      color: black;
+    }
+
+    /* Project column */
+    .grid-example .project {
+      width: auto;
+      background-color: rgb(250, 246, 246);
+      padding: 10px;
+    }
+
+    /* Fake image, just for this example */
+    .grid-example .fakeimg {
+      background-color: rgb(195, 255, 235);
+      width: 100%;
+      height: 100px;
+      padding: 20px;
+    }
+
+    /* Footer */
+    .grid-example .footer {
+      padding: 5px;
+      text-align: center;
+      background: #ffe4c4;
+      color: black;
+      margin-top: 10px;
+    }
+
+    .button {
+      display: inline-block;
+      /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+      background-color: #0FCBBF;
+      color: #ffffff;
+      /* needed to override the default link color */
+      font-weight: 400;
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 10px;
+      border-bottom: 3px solid #0DA59B;
+      /* width of the border, type, color */
+      transition: background-color 0.2s ease-out;
+    }
+
+    .button:hover {
+      background-color: transparent;
+    }
+
+    .button.contact {
+      background-color: #0FCBBF;
+      color: #ffffff;
+      text-transform: uppercase;
+      border: 2px solid #0DA59B;
+    }
+
+    .button.contact:hover {
+      background-color: transparent;
+      color: #0DA59B;
+    }
+
+    .button.viewcv {
+      background-color: #0FCBBF;
+      color: #ffffff;
+      text-transform: uppercase;
+      border: 2px solid #0DA59B;
+    }
+
+    .button.viewcv:hover {
+      background-color: transparent;
+      color: #0DA59B;
+    }
+
+    .button.readmore {
+      background-color: transparent;
+      color: #0DA59B;
+      text-transform: lowercase;
+      border: 2px solid #0DA59B;
+    }
+
+    /* ==============================
+Large devices (1024px or larger)
+================================= */
+    @media only screen and (min-width: 1024px) {
+      * {
+        box-sizing: border-box;
+      }
+
+      header {
+        align-items: center;
+        background-color: #0FCBBF;
+        padding: 25px 0 14px;
+        margin: 10px;
+        padding-top: 10px;
+        padding-right: 5px;
+        padding-bottom: 15px;
+        padding-left: 5px;
+        border-radius: 10px;
+      }
+
+      body {
+        background-color: #F5D9B0;
+        font-family: 'Merriweather', serif;
+        font-size: 20px;
+        /* Sets the font size to 16px */
+        font-weight: 350;
+        /* Sets the font weight to 300 */
+        line-height: 1.7;
+        /* Sets the line-height to 1.6 * the font-size */
+        color: #000000;
+      }
+
+      nav>ul>li {
+        display: inline-block;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        line-height: 1.5;
+      }
+
+      h1 {
+        font-size: 2.75em;
+        font-weight: 750;
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 2.25em;
+        font-weight: 250;
+      }
+
+      h3 {
+        font-size: 1.75em;
+        font-weight: 250;
+      }
+
+      h4 {
+        font-size: 1.35em;
+        font-weight: 250;
+      }
+
+      a {
+        color: #0DA59B;
+        text-decoration: none;
+        /* No underlining */
+      }
+
+      nav {
+        width: auto;
+        float: right;
+        margin-top: 4px;
+      }
+
+      nav>ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      nav>ul>li {
+        display: inline-block;
+      }
+
+      nav>ul>li>a {
+        padding: 0 20px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #ffffff;
+      }
+
+      nav>ul>li>a:visited {
+        padding: 0 20px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #000000;
+      }
+
+      nav>ul>li>a:hover {
+        padding: 0 15px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #095B56;
+      }
+
+      .navtoggle li:last-child {
+        display: none;
+      }
+
+      a:hover {
+        color: #C7603A;
+        text-decoration: underline;
+        /* Underlining when hovering over a link */
+      }
+
+      a:visited {
+        /* visited link */
+        color: #C7603A;
+      }
+
+      a:active {
+        /* selected link */
+        color: #3F13AB;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .row {
+        margin: 30px 0;
+        /* 25px top and bottom, 0 left and right */
+      }
+
+      .container {
+        padding: 0 20px;
+      }
+
+      .logo {
+        max-width: 300px;
+        text-align: center;
+        align-items: center;
+      }
+
+      #hero h1 {
+        text-align: center;
+        /* Centers text */
+      }
+
+      #hero h2 {
+        text-align: center;
+        /* Centers text */
+      }
+
+      #hero {
+        text-align: center;
+        background-color: #ffe4c4;
+        padding: 15px 0;
+        display: inline-block;
+        width: 100%;
+      }
+
+      #hero span {
+        display: block;
+      }
+
+      #footer {
+        background-color: #ffe4c4;
+        padding: 15px 0;
+        display: inline-block;
+        width: 100%;
+      }
+
+      main {
+        padding-top: 143px;
+      }
+
+      .col-md-6 {
+        width: 50%;
+      }
+
+      [class*="col-"] {
+        float: left;
+        padding: 15px 0;
+      }
+
+      @keyframes color-change {
+        0% {
+          fill: #0FCBBF;
+        }
+
+        50% {
+          fill: #fcffad;
+        }
+
+        75% {
+          fill: #2db625;
+        }
+
+        100% {
+          fill: #b66425;
+        }
+      }
+
+      .sun {
+        animation-duration: 8s;
+        animation-name: color-change;
+        animation-iteration-count: infinite;
+        animation-direction: infinite;
+        animation-timing-function: ease-in;
+      }
+
+      @keyframes cloud-move {
+        from {
+          transform: translate(10px, 50px);
+        }
+
+        to {
+          transform: translate(100px, 50px);
+        }
+      }
+
+      .cloud-front {
+        animation-name: color-change;
+        animation-duration: 20s;
+        animation-name: cloud-move;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+      }
+
+      @keyframes cloud-move-reverse {
+        from {
+          transform: translate(446px, 38px);
+        }
+
+        to {
+          transform: translate(100px, 38px);
+        }
+      }
+
+      .cloud-back {
+        animation: 20s cloud-move-reverse infinite alternate ease-in;
+      }
+
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      selector {
+        margin: 0 auto;
+        /* No spacing to top and bottom and auto spacing to left and right */
+      }
+
+      #about-page h3 {
+        margin-top: 0;
+      }
+
+      /* Layout styling */
+      .container {
+        border-radius: 15px;
+        padding: 0 20px;
+      }
+
+      .container {
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .row {
+        margin: 30px 0;
+        /* 25px top and bottom, 0 left and right */
+      }
+
+      #work .row {
+        padding-bottom: 20px;
+        border-bottom: 1px solid #4a4a4a;
+      }
+
+      /* Flexbox example start */
+      /* Reference: https://www.w3schools.com/css/css3_flexbox.asp */
+      .flexbox-example {
+        background-color: transparent;
+        border: 1px dotted transparent;
+        padding: 0px 20px;
+      }
+
+      /* Header */
+      .flexbox-example .header {
+        padding: 50px;
+        text-align: center;
+        background: #0FCBBF;
+        color: white;
+      }
+
+      /* Style the top navigation bar */
+      .flexbox-example .navbar {
+        display: flex;
+        justify-content: space-between;
+        background-color: #0FCBBF;
+      }
+
+      .flexbox-example .align-left {
+        display: flex;
+        justify-content: flex-start;
+      }
+
+      .flexbox-example .align-right {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      /* Style the navigation bar links */
+      .flexbox-example .navbar a {
+        color: black;
+        padding: 14px 20px;
+        text-decoration: none;
+        text-align: center;
+      }
+
+      /* Change color on hover */
+      .flexbox-example .navbar a:hover {
+        background-color: #c3ffeb;
+        color: #C7603A;
+      }
+
+      /* Column container */
+      .flexbox-example .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin: 0 auto;
+      }
+
+      /* Main column */
+      .flexbox-example .project {
+        width: 32.33%;
+        background-color: #ffe4c4;
+        margin: 5px;
+        padding: 10px;
+      }
+
+      /* Footer */
+      .flexbox-example .footer {
+        padding: 5px;
+        text-align: center;
+        background: #ffe4c4;
+        color: black;
+        margin-top: 10px;
+      }
+
+      /* Grid layout example start */
+      /* Reference: https://www.w3schools.com/css/css_grid.asp */
+      .grid-example {
+        background-color: transparent;
+        border: 1px dotted black;
+        padding: 0px 20px;
+      }
+
+      .grid-example .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 10px;
+        padding: 10px;
+        align-content: center;
+      }
+
+      /* Header */
+      .grid-example .header {
+        padding: 50px;
+        text-align: center;
+        background: #55baf5;
+        color: black;
+      }
+
+      /* reference: https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-area_named3 */
+      .grid-example .logo {
+        grid-area: logo;
+      }
+
+      .grid-example .navigation {
+        grid-area: navigation;
+      }
+
+      /* Style the top navigation bar */
+      .grid-example .navbar {
+        display: grid;
+        grid-template-areas: 'logo logo logo logo logo navigation';
+        align-items: center;
+        background-color: #c3ffeb;
+        justify-content: space-between;
+        padding: 14px 0px;
+      }
+
+      /* Style the navigation bar links */
+      .grid-example .navbar a {
+        color: black;
+        padding: 14px 20px;
+        text-decoration: none;
+        text-align: center;
+      }
+
+      /* Change color on hover */
+      .grid-example .navbar a:hover {
+        background-color: #c3ffeb;
+        color: black;
+      }
+
+      /* Project column */
+      .grid-example .project {
+        width: auto;
+        background-color: rgb(250, 246, 246);
+        padding: 10px;
+      }
+
+      /* Fake image, just for this example */
+      .grid-example .fakeimg {
+        background-color: rgb(195, 255, 235);
+        width: 100%;
+        height: 100px;
+        padding: 20px;
+      }
+
+      /* Footer */
+      .grid-example .footer {
+        padding: 5px;
+        text-align: center;
+        background: #ffe4c4;
+        color: black;
+        margin-top: 10px;
+      }
+
+      .button {
+        display: inline-block;
+        /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+        background-color: #0FCBBF;
+        color: #474747;
+        /* needed to override the default link color */
+        font-weight: 400;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 10px;
+        border-bottom: 3px solid #0DA59B;
+        /* width of the border, type, color */
+        transition: background-color 0.2s ease-out;
+      }
+
+      .button:hover {
+        background-color: #0FCBBF;
+      }
+
+      .button.contact {
+        background-color: #0FCBBF;
+        color: #ffffff;
+        text-transform: uppercase;
+        border: 2px solid #0DA59B;
+      }
+
+      .button.contact:hover {
+        background-color: transparent;
+        color: #0DA59B;
+      }
+
+      .button.viewcv {
+        background-color: #0FCBBF;
+        color: #ffffff;
+        text-transform: uppercase;
+        border: 2px solid #0DA59B;
+      }
+
+      .button.viewcv:hover {
+        background-color: transparent;
+        color: #0DA59B;
+      }
+
+      .button.readmore {
+        background-color: transparent;
+        color: #0DA59B;
+        text-transform: lowercase;
+        border: 2px solid #0DA59B;
+      }
