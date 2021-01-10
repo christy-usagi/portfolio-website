@@ -11,10 +11,6 @@ header {
 body {
   background-color: #F5D9B0;
   font-family: 'Merriweather', serif;
-  font-size: 12px;
-  /* Sets the font size to 16px */
-  font-weight: 300;
-  /* Sets the font weight to 300 */
   line-height: 1.6;
   /* Sets the line-height to 1.6 * the font-size */
   color: #000000;
@@ -810,7 +806,7 @@ Large devices (1024px or larger)
     body {
       background-color: #F5D9B0;
       font-family: 'Merriweather', serif;
-      font-size: 20px;
+      font-size: 14px;
       /* Sets the font size to 16px */
       font-weight: 350;
       /* Sets the font weight to 300 */
