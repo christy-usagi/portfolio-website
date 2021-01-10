@@ -5,6 +5,7 @@
 header {
   background-color: #0FCBBF;
   padding: 10px 0 4px;
+  text-align: center;
 }
 
 main {
@@ -115,8 +116,7 @@ nav>ul {
 
 /* Change color on hover */
 .flexbox-example .navbar a:hover {
-  background-color: #ffffff;
-  color: #000000;
+  color: #ffffff;
 }
 
 /* Column container */
@@ -616,8 +616,7 @@ Medium devices (640px and larger)
 
   /* Change color on hover */
   .flexbox-example .navbar a:hover {
-    background-color: #ffffff;
-    color: #000000;
+    color: #ffffff;
   }
 
   /* Column container */
@@ -1095,8 +1094,7 @@ Large devices (1024px or larger)
 
     /* Change color on hover */
     .flexbox-example .navbar a:hover {
-      background-color: #ffffff;
-      color: #000000;
+      color: #ffffff;
     }
 
     /* Column container */
@@ -1581,8 +1579,7 @@ Large devices (1024px or larger)
 
       /* Change color on hover */
       .flexbox-example .navbar a:hover {
-        background-color: #ffffff;
-        color: #000000;
+        color: #ffffff;
       }
 
       /* Column container */
