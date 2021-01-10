@@ -1,13 +1,4 @@
-alert("Welcome!")
 
-function menuToggle() {
-  var x = document.getElementById('myNavtoggle')
-  if (x.className === 'navtoggle') {
-    x.className += ' responsive'
-  } else {
-    x.className = 'navtoggle'
-  }
-}
 
 
 /*! jQuery v3.5.1 | (c) JS Foundation and other contributors | jquery.org/license */
