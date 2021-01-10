@@ -594,12 +594,7 @@ Medium devices (640px and larger)
     background-color: #0FCBBF;
   }
 
-  .flexbox-example .navbar a {
-    color: black;
-    padding: 14px 20px;
-    text-decoration: none;
-    text-align: center;
-  }
+
 
   .flexbox-example .align-left {
     display: flex;
@@ -622,7 +617,7 @@ Medium devices (640px and larger)
   /* Change color on hover */
   .flexbox-example .navbar a:hover {
     background-color: #c3ffeb;
-    color: #C7603A;
+    color: #ffffff;
   }
 
   /* Column container */
