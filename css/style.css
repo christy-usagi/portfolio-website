@@ -1097,8 +1097,8 @@ Large devices (1024px or larger)
 
     /* Change color on hover */
     .flexbox-example .navbar a:hover {
-      background-color: #c3ffeb;
-      color: #C7603A;
+      background-color: #ffffff;
+      color: #000000;
     }
 
     /* Column container */
@@ -1585,8 +1585,8 @@ Large devices (1024px or larger)
 
       /* Change color on hover */
       .flexbox-example .navbar a:hover {
-        background-color: #c3ffeb;
-        color: #C7603A;
+        background-color: #ffffff;
+        color: #000000;
       }
 
       /* Column container */
