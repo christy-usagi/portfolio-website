@@ -75,7 +75,6 @@ nav>ul {
 /* Reference: https://www.w3schools.com/css/css3_flexbox.asp */
 .flexbox-example {
   background-color: transparent;
-  border: 1px dotted transparent;
   padding: 0px 20px;
 }
 
@@ -150,6 +149,7 @@ nav>ul {
 .grid-example {
   background-color: transparent;
   padding: 0px 20px;
+    align-content: center;
 }
 
 .grid-example .grid-container {
@@ -575,7 +575,6 @@ Medium devices (640px and larger)
   /* Reference: https://www.w3schools.com/css/css3_flexbox.asp */
   .flexbox-example {
     background-color: transparent;
-    border: 1px dotted transparent;
     padding: 0px 20px;
   }
 
@@ -650,7 +649,6 @@ Medium devices (640px and larger)
   /* Reference: https://www.w3schools.com/css/css_grid.asp */
   .grid-example {
     background-color: transparent;
-    border: 1px dotted black;
     padding: 0px 20px;
   }
 
@@ -1059,7 +1057,6 @@ Large devices (1024px or larger)
     /* Reference: https://www.w3schools.com/css/css3_flexbox.asp */
     .flexbox-example {
       background-color: transparent;
-      border: 1px dotted transparent;
       padding: 0px 20px;
     }
 
@@ -1131,7 +1128,6 @@ Large devices (1024px or larger)
     /* Reference: https://www.w3schools.com/css/css_grid.asp */
     .grid-example {
       background-color: transparent;
-      border: 1px dotted black;
       padding: 0px 20px;
     }
 
@@ -1547,7 +1543,6 @@ Large devices (1024px or larger)
       /* Reference: https://www.w3schools.com/css/css3_flexbox.asp */
       .flexbox-example {
         background-color: transparent;
-        border: 1px dotted transparent;
         padding: 0px 20px;
       }
 
@@ -1619,7 +1614,6 @@ Large devices (1024px or larger)
       /* Reference: https://www.w3schools.com/css/css_grid.asp */
       .grid-example {
         background-color: transparent;
-        border: 1px dotted black;
         padding: 0px 20px;
       }
 
