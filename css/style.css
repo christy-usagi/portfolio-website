@@ -594,6 +594,13 @@ Medium devices (640px and larger)
     background-color: #0FCBBF;
   }
 
+  .flexbox-example .navbar a {
+    color: black;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+
   .flexbox-example .align-left {
     display: flex;
     justify-content: flex-start;
