@@ -34,6 +34,7 @@ nav>ul {
   display: none;
 }
 
+
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
@@ -115,8 +116,8 @@ nav>ul {
 
 /* Change color on hover */
 .flexbox-example .navbar a:hover {
-  background-color: transparent;
-  color: #C7603A;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 /* Column container */
@@ -202,9 +203,11 @@ nav>ul {
 
 /* Project column */
 .grid-example .project {
-  width: auto;
-  background-color: rgb(250, 246, 246);
-  padding: 10px;
+  padding: 5px;
+  text-align: center;
+  background: #ffe4c4;
+  color: black;
+  margin-top: 10px;
 }
 
 /* Fake image, just for this example */
@@ -593,6 +596,8 @@ Medium devices (640px and larger)
     background-color: #0FCBBF;
   }
 
+
+
   .flexbox-example .align-left {
     display: flex;
     justify-content: flex-start;
@@ -613,8 +618,8 @@ Medium devices (640px and larger)
 
   /* Change color on hover */
   .flexbox-example .navbar a:hover {
-    background-color: #c3ffeb;
-    color: #C7603A;
+    background-color: #ffffff;
+    color: #000000;
   }
 
   /* Column container */
@@ -1094,8 +1099,8 @@ Large devices (1024px or larger)
 
     /* Change color on hover */
     .flexbox-example .navbar a:hover {
-      background-color: #c3ffeb;
-      color: #C7603A;
+      background-color: #ffffff;
+      color: #000000;
     }
 
     /* Column container */
@@ -1582,8 +1587,8 @@ Large devices (1024px or larger)
 
       /* Change color on hover */
       .flexbox-example .navbar a:hover {
-        background-color: #c3ffeb;
-        color: #C7603A;
+        background-color: #ffffff;
+        color: #000000;
       }
 
       /* Column container */
