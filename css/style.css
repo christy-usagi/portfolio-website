@@ -5,6 +5,15 @@
 header {
   background-color: #0FCBBF;
   padding: 10px 0 4px;
+  text-align: center;
+}
+
+body {
+  background-color: #F5D9B0;
+  font-family: 'Merriweather', serif;
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
+  color: #000000;
 }
 
 main {
@@ -12,8 +21,10 @@ main {
 }
 
 .logo {
-  max-width: 150px;
+  max-width: 50px;
 }
+
+
 
 nav {
   display: inline-block;
@@ -64,6 +75,7 @@ nav>ul {
 
 #navbar .container {
   display: block;
+  text-align: center;
 }
 
 #work .row {
@@ -75,7 +87,6 @@ nav>ul {
 /* Reference: https://www.w3schools.com/css/css3_flexbox.asp */
 .flexbox-example {
   background-color: transparent;
-  border: 1px dotted transparent;
   padding: 0px 20px;
 }
 
@@ -116,8 +127,7 @@ nav>ul {
 
 /* Change color on hover */
 .flexbox-example .navbar a:hover {
-  background-color: #ffffff;
-  color: #000000;
+  color: #ffffff;
 }
 
 /* Column container */
@@ -149,8 +159,8 @@ nav>ul {
 /* Reference: https://www.w3schools.com/css/css_grid.asp */
 .grid-example {
   background-color: transparent;
-  border: 1px dotted black;
   padding: 0px 20px;
+    align-content: center;
 }
 
 .grid-example .grid-container {
@@ -203,9 +213,11 @@ nav>ul {
 
 /* Project column */
 .grid-example .project {
-  width: auto;
-  background-color: rgb(250, 246, 246);
-  padding: 10px;
+  padding: 5px;
+  text-align: center;
+  background: #ffe4c4;
+  color: black;
+  margin-top: 10px;
 }
 
 /* Fake image, just for this example */
@@ -354,7 +366,7 @@ Medium devices (640px and larger)
   body {
     background-color: #F5D9B0;
     font-family: 'Merriweather', serif;
-    font-size: 18px;
+    font-size: 12px;
     /* Sets the font size to 16px */
     font-weight: 300;
     /* Sets the font weight to 300 */
@@ -371,14 +383,14 @@ Medium devices (640px and larger)
   }
 
   h1 {
-    font-size: 2.75em;
-    font-weight: 700;
+    font-size: 5.75em;
+    font-weight: 800;
     text-align: center;
   }
 
   h2 {
-    font-size: 2.25em;
-    font-weight: 300;
+    font-size: 1.875em;
+    font-weight: 700;
   }
 
   h3 {
@@ -427,8 +439,8 @@ Medium devices (640px and larger)
   }
 
   .logo {
-    max-width: 150px;
-    min-width: 641px;
+    max-width: 50px;
+    min-width: 300px;
     align-items: center;
   }
 
@@ -439,6 +451,8 @@ Medium devices (640px and larger)
 
   #hero h2 {
     text-align: center;
+
+
     /* Centers text */
   }
 
@@ -574,7 +588,6 @@ Medium devices (640px and larger)
   /* Reference: https://www.w3schools.com/css/css3_flexbox.asp */
   .flexbox-example {
     background-color: transparent;
-    border: 1px dotted transparent;
     padding: 0px 20px;
   }
 
@@ -616,8 +629,7 @@ Medium devices (640px and larger)
 
   /* Change color on hover */
   .flexbox-example .navbar a:hover {
-    background-color: #ffffff;
-    color: #000000;
+    color: #ffffff;
   }
 
   /* Column container */
@@ -649,7 +661,6 @@ Medium devices (640px and larger)
   /* Reference: https://www.w3schools.com/css/css_grid.asp */
   .grid-example {
     background-color: transparent;
-    border: 1px dotted black;
     padding: 0px 20px;
   }
 
@@ -798,9 +809,9 @@ Large devices (1024px or larger)
     body {
       background-color: #F5D9B0;
       font-family: 'Merriweather', serif;
-      font-size: 20px;
+      font-size: 14px;
       /* Sets the font size to 16px */
-      font-weight: 350;
+      font-weight: 200;
       /* Sets the font weight to 300 */
       line-height: 1.7;
       /* Sets the line-height to 1.6 * the font-size */
@@ -821,7 +832,7 @@ Large devices (1024px or larger)
     }
 
     h2 {
-      font-size: 2.25em;
+      font-size: 1.875em;
       font-weight: 350;
     }
 
@@ -880,7 +891,7 @@ Large devices (1024px or larger)
     }
 
     .logo {
-      max-width: 150px;
+      max-width: 50px;
       text-align: center;
     }
 
@@ -891,6 +902,7 @@ Large devices (1024px or larger)
 
     #hero h2 {
       text-align: center;
+
       /* Centers text */
     }
 
@@ -1058,7 +1070,6 @@ Large devices (1024px or larger)
     /* Reference: https://www.w3schools.com/css/css3_flexbox.asp */
     .flexbox-example {
       background-color: transparent;
-      border: 1px dotted transparent;
       padding: 0px 20px;
     }
 
@@ -1097,8 +1108,7 @@ Large devices (1024px or larger)
 
     /* Change color on hover */
     .flexbox-example .navbar a:hover {
-      background-color: #ffffff;
-      color: #000000;
+      color: #ffffff;
     }
 
     /* Column container */
@@ -1130,7 +1140,6 @@ Large devices (1024px or larger)
     /* Reference: https://www.w3schools.com/css/css_grid.asp */
     .grid-example {
       background-color: transparent;
-      border: 1px dotted black;
       padding: 0px 20px;
     }
 
@@ -1282,9 +1291,9 @@ Large devices (1024px or larger)
       body {
         background-color: #F5D9B0;
         font-family: 'Merriweather', serif;
-        font-size: 20px;
+        font-size: 16px;
         /* Sets the font size to 16px */
-        font-weight: 350;
+        font-weight: 400;
         /* Sets the font weight to 300 */
         line-height: 1.7;
         /* Sets the line-height to 1.6 * the font-size */
@@ -1309,8 +1318,8 @@ Large devices (1024px or larger)
       }
 
       h2 {
-        font-size: 2.25em;
-        font-weight: 250;
+        font-size: 1.875em;
+        font-weight: 150;
       }
 
       h3 {
@@ -1399,7 +1408,7 @@ Large devices (1024px or larger)
       }
 
       .logo {
-        max-width: 300px;
+        max-width: 150px;
         text-align: center;
         align-items: center;
       }
@@ -1411,6 +1420,7 @@ Large devices (1024px or larger)
 
       #hero h2 {
         text-align: center;
+
         /* Centers text */
       }
 
@@ -1546,7 +1556,6 @@ Large devices (1024px or larger)
       /* Reference: https://www.w3schools.com/css/css3_flexbox.asp */
       .flexbox-example {
         background-color: transparent;
-        border: 1px dotted transparent;
         padding: 0px 20px;
       }
 
@@ -1585,8 +1594,7 @@ Large devices (1024px or larger)
 
       /* Change color on hover */
       .flexbox-example .navbar a:hover {
-        background-color: #ffffff;
-        color: #000000;
+        color: #ffffff;
       }
 
       /* Column container */
@@ -1618,7 +1626,6 @@ Large devices (1024px or larger)
       /* Reference: https://www.w3schools.com/css/css_grid.asp */
       .grid-example {
         background-color: transparent;
-        border: 1px dotted black;
         padding: 0px 20px;
       }
 
