@@ -12,6 +12,8 @@ body {
   background-color: #F5D9B0;
   font-family: 'Merriweather', serif;
   line-height: 1.6;
+  font-size: 1.35em;
+  font-weight: 200;
   /* Sets the line-height to 1.6 * the font-size */
   color: #000000;
 }
@@ -23,6 +25,8 @@ main {
 .logo {
   max-width: 50px;
 }
+
+
 
 nav {
   display: inline-block;
@@ -73,6 +77,7 @@ nav>ul {
 
 #navbar .container {
   display: block;
+  text-align: center;
 }
 
 #work .row {
@@ -380,14 +385,14 @@ Medium devices (640px and larger)
   }
 
   h1 {
-    font-size: 2.75em;
-    font-weight: 700;
+    font-size: 5.75em;
+    font-weight: 800;
     text-align: center;
   }
 
   h2 {
     font-size: 1.875em;
-    font-weight: 300;
+    font-weight: 700;
   }
 
   h3 {
@@ -808,7 +813,7 @@ Large devices (1024px or larger)
       font-family: 'Merriweather', serif;
       font-size: 14px;
       /* Sets the font size to 16px */
-      font-weight: 350;
+      font-weight: 200;
       /* Sets the font weight to 300 */
       line-height: 1.7;
       /* Sets the line-height to 1.6 * the font-size */
@@ -1288,9 +1293,9 @@ Large devices (1024px or larger)
       body {
         background-color: #F5D9B0;
         font-family: 'Merriweather', serif;
-        font-size: 20px;
+        font-size: 14px;
         /* Sets the font size to 16px */
-        font-weight: 350;
+        font-weight: 300;
         /* Sets the font weight to 300 */
         line-height: 1.7;
         /* Sets the line-height to 1.6 * the font-size */
@@ -1316,7 +1321,7 @@ Large devices (1024px or larger)
 
       h2 {
         font-size: 1.875em;
-        font-weight: 250;
+        font-weight: 150;
       }
 
       h3 {
